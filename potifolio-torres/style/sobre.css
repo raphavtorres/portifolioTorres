@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+aside {
+    text-align: center;
+    background-image: linear-gradient(5deg, rgba(0, 47, 255, 0) 35%, var(--azulclaro));
+    padding: 30px;
+    margin-right: 20px;
+    border-radius: 0px 40px;
+
+}
+
+aside #foto_criador {
+    width: 10em;
+    height: 10em;
+    margin: 10px 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 20px rgba(190, 255, 255, 0.514);
+}
+
+aside p {
+    margin: 20px 0px;
+    font-weight: 500;
+}
+
+aside #icons {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 0px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.123);
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#icons a {
+    display: flex;
+    align-items: center;
+}
+#icons a img {
+    transition-duration: .5s;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+#icons a img:hover {
+    transition-duration: .5s;
+    height: 42px;
+    width: 42px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    margin: 10px 40px;
+    line-height: 2em;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--laranja);
+    padding-bottom: 20px;
+}
+
+@media (max-width: 725px) {
+    main {
+        display: block;
+    }
+    aside {
+        margin: auto;
+        width: 265px;
+    }
+    section {
+        align-items: center;
+    }
+    section > h1 {
+        text-align: center;
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 0px;
+
+    }
+    section > h1 {
+        font-size: 3em;
+        width: 250px;
+    }
+    aside {
+        width: 200px;
+        margin: auto;
+    }
+    aside #foto_criador {
+        margin: 0px;
+    }
+}
